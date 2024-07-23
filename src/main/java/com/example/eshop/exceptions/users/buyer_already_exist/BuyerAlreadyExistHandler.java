@@ -1,4 +1,5 @@
-package com.example.eshop.exceptions.item.item_allready_exist;
+package com.example.eshop.exceptions.users.buyer_already_exist;
+
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
@@ -8,19 +9,18 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.time.LocalDateTime;
 
-
 @ControllerAdvice
-public class ItemAllreadyExistHandler {
+public class BuyerAlreadyExistHandler {
 
-    @ExceptionHandler(ItemAllreadyExistException.class)
-    public ResponseEntity<ItemAllreadyExistResponse> handleMyException(ItemAllreadyExistException ex, HttpServletRequest request) {
-        ItemAllreadyExistResponse errorResponse= new   ItemAllreadyExistResponse(
+    @ExceptionHandler(BuyerAlreadyExistException.class)
+    public ResponseEntity<BuyerAlreadyExistResponse> handleMyException(BuyerAlreadyExistException ex, HttpServletRequest request) {
+        BuyerAlreadyExistResponse errorResponse = new BuyerAlreadyExistResponse(
                 LocalDateTime.now(),
                 HttpStatus.BAD_REQUEST.value(),
-                "Item Allready Exist",
+                "Buyer Allready Exist",
                 ex.getMessage(),
                 request.getRequestURI()
         );
-        return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
     }
 }

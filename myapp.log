@@ -8076,8 +8076,8 @@ You may need to update both your build tool settings as well as your IDE.
 2024-07-23 17:45:39 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2024-07-23 17:45:39 [main] INFO  com.example.eshop.EshopApplication - Started EshopApplication in 7.285 seconds (process running for 7.71)
 2024-07-23 17:45:59 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-23 17:46:01 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.example.eshop.exceptions.item.item_allready_exist.ItemAllreadyExistException: the Pen with  name  :biyytrtyiw is already store] with root cause
-com.example.eshop.exceptions.item.item_allready_exist.ItemAllreadyExistException: the Pen with  name  :biyytrtyiw is already store
+2024-07-23 17:46:01 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.example.eshop.exceptions.item.item_already_exist.ItemAlreadyExistException: the Pen with  name  :biyytrtyiw is already store] with root cause
+com.example.eshop.exceptions.item.item_already_exist.ItemAlreadyExistException: the Pen with  name  :biyytrtyiw is already store
 	at com.example.eshop.service.item.PenService.saveNewPen(PenService.java:63)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -9055,3 +9055,544 @@ Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configura
 2024-07-23 20:15:09 [main] INFO  com.example.eshop.EshopApplication - Started EshopApplication in 7.886 seconds (process running for 8.402)
 2024-07-23 20:16:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-07-23 20:16:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-23 21:01:43 [main] INFO  com.example.eshop.EshopApplication - Starting EshopApplication using Java 22.0.1 with PID 18500 (C:\Users\30698\Desktop\eshop-with-Spring-boot\target\classes started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
+2024-07-23 21:01:43 [main] INFO  com.example.eshop.EshopApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-23 21:01:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-23 21:01:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-07-23 21:01:45 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-23 21:01:45 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-23 21:01:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-07-23 21:01:45 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-23 21:01:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-23 21:01:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@283a8ad6
+2024-07-23 21:01:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-23 21:01:47 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "buyer" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "eshop" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "item_order" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "notebook" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "owner" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "paper" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pen" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pencil" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "shopping_cart" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "shopping_cart" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "buyer" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "eshop" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "item" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "item_order" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "notebook" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "owner" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "paper" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pen" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pencil" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "shopping_cart" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "eshop_seq" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "item_order_seq" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "seq_paper" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "shopping_card_seq" does not exist, skipping
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:01:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "user_seq" does not exist, skipping
+2024-07-23 21:01:49 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-23 21:01:50 [main] INFO  com.example.eshop.EshopApplication - Started EshopApplication in 7.608 seconds (process running for 8.171)
+2024-07-23 21:02:15 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-23 21:02:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-23 21:02:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-23 21:04:43 [main] INFO  com.example.eshop.EshopApplication - Starting EshopApplication using Java 22.0.1 with PID 24168 (C:\Users\30698\Desktop\eshop-with-Spring-boot\target\classes started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
+2024-07-23 21:04:43 [main] INFO  com.example.eshop.EshopApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-23 21:04:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-23 21:04:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-07-23 21:04:45 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-23 21:04:45 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-23 21:04:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-07-23 21:04:45 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-23 21:04:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-23 21:04:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7b211077
+2024-07-23 21:04:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-23 21:04:47 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "buyer" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "eshop" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "item_order" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "notebook" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "owner" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "paper" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pen" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pencil" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "shopping_cart" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "shopping_cart" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "buyer" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "eshop" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "item" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "item_order" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "notebook" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "owner" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "paper" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pen" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pencil" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "shopping_cart" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "eshop_seq" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "item_order_seq" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "seq_paper" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "shopping_card_seq" does not exist, skipping
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:04:47 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "user_seq" does not exist, skipping
+2024-07-23 21:04:48 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-23 21:04:49 [main] INFO  com.example.eshop.EshopApplication - Started EshopApplication in 6.269 seconds (process running for 6.679)
+2024-07-23 21:04:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-23 21:04:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-23 21:05:00 [main] INFO  com.example.eshop.EshopApplication - Starting EshopApplication using Java 22.0.1 with PID 12692 (C:\Users\30698\Desktop\eshop-with-Spring-boot\target\classes started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
+2024-07-23 21:05:00 [main] INFO  com.example.eshop.EshopApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-23 21:05:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-23 21:05:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-07-23 21:05:01 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-23 21:05:02 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-23 21:05:02 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-07-23 21:05:02 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-23 21:05:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-23 21:05:02 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c6c2a73
+2024-07-23 21:05:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-23 21:05:03 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "buyer" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "eshop" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "item_order" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "notebook" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "owner" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "paper" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pen" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pencil" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "shopping_cart" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "shopping_cart" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "buyer" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "eshop" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "item" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "item_order" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "notebook" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "owner" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "paper" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pen" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pencil" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "shopping_cart" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "eshop_seq" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "item_order_seq" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "seq_paper" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "shopping_card_seq" does not exist, skipping
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:05:03 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "user_seq" does not exist, skipping
+2024-07-23 21:05:05 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-23 21:05:05 [main] INFO  com.example.eshop.EshopApplication - Started EshopApplication in 6.304 seconds (process running for 6.756)
+2024-07-23 21:05:14 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-23 21:05:15 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: email taken] with root cause
+java.lang.IllegalStateException: email taken
+	at com.example.eshop.service.users.BuyerService.saveNewBuyer(BuyerService.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.example.eshop.service.users.BuyerService$$SpringCGLIB$$0.saveNewBuyer(<generated>)
+	at com.example.eshop.controller.users.BuyerController.saveBuyer(BuyerController.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-07-23 21:06:19 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: email taken] with root cause
+java.lang.IllegalStateException: email taken
+	at com.example.eshop.service.users.BuyerService.saveNewBuyer(BuyerService.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.example.eshop.service.users.BuyerService$$SpringCGLIB$$0.saveNewBuyer(<generated>)
+	at com.example.eshop.controller.users.BuyerController.saveBuyer(BuyerController.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-07-23 21:07:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-23 21:07:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-23 21:07:51 [main] INFO  com.example.eshop.EshopApplication - Starting EshopApplication using Java 22.0.1 with PID 13696 (C:\Users\30698\Desktop\eshop-with-Spring-boot\target\classes started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
+2024-07-23 21:07:51 [main] INFO  com.example.eshop.EshopApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-23 21:07:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-23 21:07:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-07-23 21:07:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-23 21:07:54 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-23 21:07:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-07-23 21:07:54 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-23 21:07:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-23 21:07:54 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a6a6a69
+2024-07-23 21:07:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-23 21:07:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "buyer" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "eshop" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "item_order" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "notebook" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "owner" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "paper" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pen" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pencil" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "shopping_cart" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "shopping_cart" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "buyer" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "eshop" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "item" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "item_order" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "notebook" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "owner" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "paper" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pen" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pencil" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "shopping_cart" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "eshop_seq" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "item_order_seq" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "seq_paper" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "shopping_card_seq" does not exist, skipping
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:07:55 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "user_seq" does not exist, skipping
+2024-07-23 21:07:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-23 21:07:57 [main] INFO  com.example.eshop.EshopApplication - Started EshopApplication in 6.18 seconds (process running for 6.635)
+2024-07-23 21:08:06 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-23 21:08:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-23 21:08:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-23 21:09:47 [main] INFO  com.example.eshop.EshopApplication - Starting EshopApplication using Java 22.0.1 with PID 25176 (C:\Users\30698\Desktop\eshop-with-Spring-boot\target\classes started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
+2024-07-23 21:09:47 [main] INFO  com.example.eshop.EshopApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-23 21:09:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-23 21:09:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-07-23 21:09:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-23 21:09:49 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-23 21:09:49 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-07-23 21:09:49 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-23 21:09:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-23 21:09:50 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d25f816
+2024-07-23 21:09:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-23 21:09:51 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "buyer" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "eshop" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "item_order" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "notebook" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "owner" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "paper" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pen" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pencil" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "shopping_cart" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "shopping_cart" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "buyer" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "eshop" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "item" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "item_order" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "notebook" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "owner" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "paper" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pen" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pencil" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "shopping_cart" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "eshop_seq" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "item_order_seq" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "seq_paper" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "shopping_card_seq" does not exist, skipping
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:09:51 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "user_seq" does not exist, skipping
+2024-07-23 21:09:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-23 21:09:53 [main] INFO  com.example.eshop.EshopApplication - Started EshopApplication in 6.495 seconds (process running for 6.898)
+2024-07-23 21:10:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-23 21:10:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-23 21:12:30 [main] INFO  com.example.eshop.EshopApplication - Starting EshopApplication using Java 22.0.1 with PID 26908 (C:\Users\30698\Desktop\eshop-with-Spring-boot\target\classes started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
+2024-07-23 21:12:30 [main] INFO  com.example.eshop.EshopApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-23 21:12:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-23 21:12:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-07-23 21:12:32 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-23 21:12:32 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-23 21:12:32 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-07-23 21:12:32 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-07-23 21:12:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-23 21:12:33 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@8ac12e6
+2024-07-23 21:12:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-23 21:12:34 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "buyer" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "eshop" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "item_order" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "notebook" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "owner" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "paper" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pen" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "pencil" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "shopping_cart" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "shopping_cart" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "buyer" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "eshop" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "item" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "item_order" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "notebook" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "owner" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "paper" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pen" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "pencil" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "shopping_cart" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "eshop_seq" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "item_order_seq" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "seq_paper" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "shopping_card_seq" does not exist, skipping
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-07-23 21:12:34 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "user_seq" does not exist, skipping
+2024-07-23 21:12:35 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-23 21:12:36 [main] INFO  com.example.eshop.EshopApplication - Started EshopApplication in 6.134 seconds (process running for 6.607)
+2024-07-23 21:12:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-23 21:12:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

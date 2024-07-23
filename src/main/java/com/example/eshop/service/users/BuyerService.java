@@ -1,6 +1,7 @@
 package com.example.eshop.service.users;
 
 import com.example.eshop.entity.users.Buyer;
+import com.example.eshop.exceptions.users.buyer_already_exist.BuyerAlreadyExistException;
 import com.example.eshop.exceptions.users.buyer_not_found.BuyerNotFoundException;
 import com.example.eshop.repository.users.BuyerRepository;
 import lombok.RequiredArgsConstructor;
@@ -53,10 +54,10 @@ public class BuyerService {
     }
 
     public void saveNewBuyer(Buyer buyer) {
-        //TODO exceprtion if find user and i can save new with same email
+
         Optional<Buyer> optionalbuyer = buyerRepository.findByEmail(buyer.getEmail());
         if (optionalbuyer.isPresent()) {
-            throw new IllegalStateException("email taken");
+            throw new BuyerAlreadyExistException("buyer with email : " +buyer.getEmail()+" is already register");
         }
         buyerRepository.save(buyer);
     }

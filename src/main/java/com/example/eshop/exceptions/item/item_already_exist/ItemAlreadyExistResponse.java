@@ -1,4 +1,4 @@
-package com.example.eshop.exceptions.item.item_allready_exist;
+package com.example.eshop.exceptions.item.item_already_exist;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @AllArgsConstructor
-public class ItemAllreadyExistResponse {
+public class ItemAlreadyExistResponse {
     private LocalDateTime timestamp;
     private int status;
     private String error;

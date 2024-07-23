@@ -1,4 +1,4 @@
-package com.example.eshop.exceptions.users.buyer_allready_exist;
+package com.example.eshop.exceptions.users.buyer_already_exist;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @AllArgsConstructor
-public class BuyerAllreadyExistResponse {
+public class BuyerAlreadyExistResponse {
 
     private LocalDateTime timestamp;
         private int status;

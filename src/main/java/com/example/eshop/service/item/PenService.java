@@ -2,7 +2,7 @@ package com.example.eshop.service.item;
 
 import com.example.eshop.dto.item.PenDTO;
 import com.example.eshop.entity.items.Pen;
-import com.example.eshop.exceptions.item.item_allready_exist.ItemAllreadyExistException;
+import com.example.eshop.exceptions.item.item_already_exist.ItemAlreadyExistException;
 import com.example.eshop.exceptions.item.item_not_found.ItemNotFoundException;
 import com.example.eshop.repository.items.PenRepository;
 import lombok.RequiredArgsConstructor;
@@ -60,7 +60,7 @@ public class PenService {
     public void saveNewPen(Pen pen) {
         Optional<Pen> optionalPen =  penRepository.findByName(pen.getName());
         if(optionalPen.isPresent()){
-            throw new ItemAllreadyExistException("the Pen with  name : " +pen.getName()+ " is already store");
+            throw new ItemAlreadyExistException("the Pen with  name : " +pen.getName()+ " is already store");
         }
         penRepository.save(pen);
     }
