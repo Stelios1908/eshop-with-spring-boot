@@ -12,6 +12,7 @@ public class EshopApplication {
 		SpringApplication.run(EshopApplication.class, args);
 	}
 
+	//ASDADSDSA
 	@Bean
 	public ModelMapper modelMapper(){
 		return new ModelMapper();
