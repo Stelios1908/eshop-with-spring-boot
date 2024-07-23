@@ -14,7 +14,6 @@ public class EshopApplication {
 
 	@Bean
 	public ModelMapper modelMapper(){
-		String a;
 		return new ModelMapper();
 	}
 
