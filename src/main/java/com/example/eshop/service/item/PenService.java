@@ -2,7 +2,7 @@ package com.example.eshop.service.item;
 
 import com.example.eshop.dto.item.PenDTO;
 import com.example.eshop.entity.items.Pen;
-import com.example.eshop.exceptions.item.item_already_exist.ItemAlreadyExistException;
+import com.example.eshop.exceptions.item.itemalreadyexist.ItemAlreadyExistException;
 import com.example.eshop.exceptions.item.item_not_found.ItemNotFoundException;
 import com.example.eshop.repository.items.PenRepository;
 import lombok.RequiredArgsConstructor;
@@ -57,12 +57,12 @@ public class PenService {
     }
 
     @Transactional
-    public void saveNewPen(PenDTO pen) {
-        Optional<Pen> optionalPen =  penRepository.findByName(pen.getName());
+    public void saveNewPen(PenDTO penDTO) {
+        Optional<Pen> optionalPen =  penRepository.findByName(penDTO.getName());
         if(optionalPen.isPresent()){
-            throw new ItemAlreadyExistException("the Pen with  name : " +pen.getName()+ " is already store");
+            throw new ItemAlreadyExistException("the Pen with  name : " +penDTO.getName()+ " is already store");
         }
-        Pen penForDataBase = modelMapper.map(pen,Pen.class);
+        Pen penForDataBase = modelMapper.map(penDTO,Pen.class);
 
         penRepository.save(penForDataBase);
     }

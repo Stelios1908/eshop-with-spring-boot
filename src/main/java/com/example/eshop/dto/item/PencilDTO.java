@@ -4,8 +4,10 @@ package com.example.eshop.dto.item;
 import com.example.eshop.enums.ItemTypeEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+@EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

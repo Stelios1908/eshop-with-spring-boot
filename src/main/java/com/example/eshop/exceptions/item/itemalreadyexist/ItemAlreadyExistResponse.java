@@ -1,4 +1,4 @@
-package com.example.eshop.exceptions.item.item_already_exist;
+package com.example.eshop.exceptions.item.itemalreadyexist;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

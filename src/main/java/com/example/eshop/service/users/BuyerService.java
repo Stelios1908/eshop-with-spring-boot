@@ -1,9 +1,8 @@
 package com.example.eshop.service.users;
 
 import com.example.eshop.dto.users.BuyerDTO;
-import com.example.eshop.entity.items.Pen;
 import com.example.eshop.entity.users.Buyer;
-import com.example.eshop.exceptions.users.buyer_already_exist.BuyerAlreadyExistException;
+import com.example.eshop.exceptions.users.buyeralreadyexist.BuyerAlreadyExistException;
 import com.example.eshop.exceptions.users.buyer_not_found.BuyerNotFoundException;
 import com.example.eshop.repository.users.BuyerRepository;
 import lombok.RequiredArgsConstructor;

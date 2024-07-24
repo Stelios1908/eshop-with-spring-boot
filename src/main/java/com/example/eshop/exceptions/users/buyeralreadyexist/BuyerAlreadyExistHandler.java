@@ -1,4 +1,4 @@
-package com.example.eshop.exceptions.users.buyer_already_exist;
+package com.example.eshop.exceptions.users.buyeralreadyexist;
 
 
 import jakarta.servlet.http.HttpServletRequest;
