@@ -57,12 +57,14 @@ public class PenService {
     }
 
     @Transactional
-    public void saveNewPen(Pen pen) {
+    public void saveNewPen(PenDTO pen) {
         Optional<Pen> optionalPen =  penRepository.findByName(pen.getName());
         if(optionalPen.isPresent()){
             throw new ItemAlreadyExistException("the Pen with  name : " +pen.getName()+ " is already store");
         }
-        penRepository.save(pen);
+        Pen penForDataBase = modelMapper.map(pen,Pen.class);
+
+        penRepository.save(penForDataBase);
     }
 
     @Transactional

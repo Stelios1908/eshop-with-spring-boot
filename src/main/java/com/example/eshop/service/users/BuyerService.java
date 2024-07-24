@@ -1,11 +1,14 @@
 package com.example.eshop.service.users;
 
+import com.example.eshop.dto.users.BuyerDTO;
+import com.example.eshop.entity.items.Pen;
 import com.example.eshop.entity.users.Buyer;
 import com.example.eshop.exceptions.users.buyer_already_exist.BuyerAlreadyExistException;
 import com.example.eshop.exceptions.users.buyer_not_found.BuyerNotFoundException;
 import com.example.eshop.repository.users.BuyerRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,6 +25,7 @@ public class BuyerService {
 
     private final BuyerRepository buyerRepository;
 
+    private final ModelMapper modelMapper;
 
     @Transactional(readOnly = true)
     public List<Buyer> getAllBuyer(){
@@ -53,13 +57,14 @@ public class BuyerService {
         }
     }
 
-    public void saveNewBuyer(Buyer buyer) {
+    public void saveNewBuyer(BuyerDTO buyer) {
 
         Optional<Buyer> optionalbuyer = buyerRepository.findByEmail(buyer.getEmail());
         if (optionalbuyer.isPresent()) {
-            throw new BuyerAlreadyExistException("buyer with email : " +buyer.getEmail()+" is already register");
+            throw new BuyerAlreadyExistException("Buyer with email : " +buyer.getEmail()+" is already register");
         }
-        buyerRepository.save(buyer);
+        Buyer penForDataBase = modelMapper.map(buyer, Buyer.class);
+        buyerRepository.save(penForDataBase);
     }
 
 

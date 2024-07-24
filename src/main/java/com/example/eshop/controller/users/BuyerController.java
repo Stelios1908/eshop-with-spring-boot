@@ -1,5 +1,6 @@
 package com.example.eshop.controller.users;
 
+import com.example.eshop.dto.users.BuyerDTO;
 import com.example.eshop.entity.users.Buyer;
 import com.example.eshop.service.users.BuyerService;
 import lombok.RequiredArgsConstructor;
@@ -36,7 +37,7 @@ public class BuyerController {
 
     //TODO change Buyer with BuyerDTO
     @PostMapping()
-    public void saveBuyer(@RequestBody Buyer buyer) {
+    public void saveBuyer(@RequestBody BuyerDTO buyer) {
         buyerService.saveNewBuyer(buyer);
     }
 

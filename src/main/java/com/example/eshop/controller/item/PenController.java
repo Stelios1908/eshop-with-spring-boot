@@ -36,7 +36,7 @@ public class PenController {
 
     //TODO change Pen with PenDTO
     @PostMapping
-    public void savePen(@RequestBody Pen pen){
+    public void savePen(@RequestBody PenDTO pen){
         penService.saveNewPen(pen);
     }
 
