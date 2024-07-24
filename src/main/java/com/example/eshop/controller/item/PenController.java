@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PenController {
 
-    private String name;
+
     private final PenService penService;
 
 
