@@ -15,8 +15,8 @@ public class OwenDTO extends Users {
 
     private boolean isAdmin;
 
-    public OwenDTO(Long id,String name,String email,boolean isAdmin){
-        super(id,name,email);
+    public OwenDTO(Long id,String name,String email,String password,boolean isAdmin){
+        super(id,name,email,password);
         this.isAdmin=isAdmin;
     }
 }

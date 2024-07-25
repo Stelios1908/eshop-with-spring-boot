@@ -3,6 +3,7 @@ package com.example.eshop.entity.users;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -37,4 +38,9 @@ public abstract class Users {
     @NotNull
     @Column(name = "email")
     private String email;
+
+    @NotNull
+    @Column(name = "password")
+    @Size(max = 100)
+    private String password;
 }

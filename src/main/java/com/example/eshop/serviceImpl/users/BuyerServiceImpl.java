@@ -11,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -28,6 +29,8 @@ public class BuyerServiceImpl implements BuyerService {
     private final BuyerRepository buyerRepository;
 
     private final ModelMapper modelMapper;
+
+    private final PasswordEncoder passwordEncoder;
 
     @Override
     public List<BuyerDTO> getAllBuyer(){
@@ -58,6 +61,7 @@ public class BuyerServiceImpl implements BuyerService {
             throw new BuyerAlreadyExistException("Buyer with email : " +buyer.getEmail()+" is already register");
         }
         Buyer penForDataBase = modelMapper.map(buyer, Buyer.class);
+        penForDataBase.setPassword(passwordEncoder.encode(penForDataBase.getPassword()));
         buyerRepository.save(penForDataBase);
     }
 

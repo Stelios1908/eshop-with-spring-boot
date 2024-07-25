@@ -18,10 +18,11 @@ public class BuyerDTO extends UsersDTO{
     public BuyerDTO(Long id,
                     String name,
                     String email,
+                    String password,
                     int bonus,
                     BuyerCategoryEnum buyerCategory
     ){
-        super(id,name,email);
+        super(id,name,email,password);
         this.bonus=bonus;
         this.buyerCategory=buyerCategory;
 

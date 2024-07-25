@@ -7,11 +7,18 @@ import com.example.eshop.repository.users.BuyerRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.List;
 
 @Configuration
 public class BuyerConfig  {
+
+    private final PasswordEncoder passwordEncoder;
+
+    public BuyerConfig(PasswordEncoder passwordEncoder){
+        this.passwordEncoder = passwordEncoder;
+    }
 
     @Bean
     CommandLineRunner commandLineRunnerBuyer(BuyerRepository buyerRepositiry) {
@@ -20,7 +27,8 @@ public class BuyerConfig  {
                 Buyer buyer1 = new Buyer(
                         null,
                         "stelios",
-                        "stelios@gmail.com",
+                        passwordEncoder.encode("steliosPass"),
+                        "dsadsda",
                         10,
                         BuyerCategoryEnum.CAT_A
                 );
@@ -29,6 +37,7 @@ public class BuyerConfig  {
                         null,
                         "sakis",
                         "sakis@gmail.com",
+                        passwordEncoder.encode("sakisPass"),
                         150,
                         BuyerCategoryEnum.CAT_B
                 );
@@ -37,6 +46,7 @@ public class BuyerConfig  {
                         null,
                         "panagiotis",
                         "panagiotis@gmail.com",
+                        passwordEncoder.encode("panagiotisPass"),
                         150,
                         BuyerCategoryEnum.CAT_C
                 );
