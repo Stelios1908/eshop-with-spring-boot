@@ -1,4 +1,4 @@
-package com.example.eshop.exceptions.users.buyer_not_found;
+package com.example.eshop.exceptions.users.buyernotfound;
 
 
 import jakarta.servlet.http.HttpServletRequest;

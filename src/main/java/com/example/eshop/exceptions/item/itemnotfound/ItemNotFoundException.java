@@ -1,4 +1,4 @@
-package com.example.eshop.exceptions.item.item_not_found;
+package com.example.eshop.exceptions.item.itemnotfound;
 
 import jakarta.persistence.EntityNotFoundException;
 
