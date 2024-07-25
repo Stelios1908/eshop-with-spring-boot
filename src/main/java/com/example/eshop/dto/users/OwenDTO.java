@@ -1,13 +1,9 @@
 package com.example.eshop.dto.users;
 
 import com.example.eshop.entity.users.Users;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
-
+@EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
