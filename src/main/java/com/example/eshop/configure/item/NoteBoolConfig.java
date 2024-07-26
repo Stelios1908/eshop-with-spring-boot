@@ -13,6 +13,7 @@ import java.util.List;
 @Configuration
 public class NoteBoolConfig {
 
+    /*
     @Bean
     CommandLineRunner commandLineRunnerNotebook(NotebookRepository notebookRepository){
         return args -> {
@@ -38,5 +39,5 @@ public class NoteBoolConfig {
             );
 ;
         };
-    }
+    }*/
 }

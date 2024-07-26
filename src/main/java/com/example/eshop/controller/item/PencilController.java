@@ -22,9 +22,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PencilController {
 
-    public final PencilService pencilService;
+    private final PencilService pencilService;
 
-    public final ModelMapper modelMapper;
+    private final ModelMapper modelMapper;
 
     /**
      * GetMapping

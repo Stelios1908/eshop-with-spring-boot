@@ -13,7 +13,7 @@ import lombok.Setter;
 import java.util.ArrayList;
 
 @Entity
-@Table(name = "ShoppingCart")
+@Table(name = "shopping_cart")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -29,7 +29,6 @@ public class ShoppingCarτ {
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
             generator = "shopping_card_seq"
-
     )
     private Long id;
 

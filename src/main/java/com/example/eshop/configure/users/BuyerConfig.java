@@ -19,7 +19,7 @@ public class BuyerConfig  {
     public BuyerConfig(PasswordEncoder passwordEncoder){
         this.passwordEncoder = passwordEncoder;
     }
-
+/*
     @Bean
     CommandLineRunner commandLineRunnerBuyer(BuyerRepository buyerRepositiry) {
             return args -> {
@@ -27,8 +27,8 @@ public class BuyerConfig  {
                 Buyer buyer1 = new Buyer(
                         null,
                         "stelios",
+                        "stelios@gmail.com",
                         passwordEncoder.encode("steliosPass"),
-                        "dsadsda",
                         10,
                         BuyerCategoryEnum.CAT_A
                 );
@@ -57,5 +57,6 @@ public class BuyerConfig  {
                 );
 
             };
-        }}
+        }*/
+}
 

@@ -1,7 +1,6 @@
 package com.example.eshop.controller.users;
 
 import com.example.eshop.dto.users.BuyerDTO;
-import com.example.eshop.entity.users.Buyer;
 import com.example.eshop.service.users.BuyerService;
 import com.example.eshop.swagger.SwaggerApiInfo;
 import io.swagger.v3.oas.annotations.Operation;
@@ -15,9 +14,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.ErrorResponse;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-import java.util.Optional;
+
 
 @RestController
 @RequestMapping(value = "api/buyer")

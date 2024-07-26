@@ -10,7 +10,7 @@ import java.util.List;
 
 @Configuration
 public class PencilConfig {
-
+/*
     @Bean
     CommandLineRunner commandLineRunnerPencil(PencilRepository pencilRepository){
         return args -> {
@@ -46,5 +46,5 @@ public class PencilConfig {
                     List.of(pencil1,pencil2,pencil3)
             );
         };
-    }
+    }*/
 }

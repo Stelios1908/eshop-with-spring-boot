@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class PaperConfig {
-
+/*
     @Bean
     CommandLineRunner commandLineRunnerPaper(PaperRepository paperRepository) {
         return args -> {
@@ -46,5 +46,5 @@ public class PaperConfig {
 
             paperRepository.saveAll(List.of(paper1, paper2,paper3));
         };
-    }
+    }*/
 }

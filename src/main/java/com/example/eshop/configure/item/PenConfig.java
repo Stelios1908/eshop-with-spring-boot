@@ -10,7 +10,7 @@ import java.util.List;
 
 @Configuration
 public class PenConfig {
-
+/*
     @Bean
     CommandLineRunner commandLineRunnerPen(PenRepository penRepository){
         return args -> {
@@ -47,5 +47,5 @@ public class PenConfig {
                     List.of(pen1,pen2,pen3)
             );
         };
-    }
+    }*/
 }
