@@ -27,6 +27,7 @@ public class PenController {
 
     /**
      * Get all pen
+     *
      * @return List with pen
      */
     @GetMapping
@@ -45,12 +46,13 @@ public class PenController {
             content = {@Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
                     schema = @Schema(implementation = ErrorResponse.class))})
     // @Authorized(resourceId = "#requestTaskActionProcessDTO.requestTaskId")
-    public ResponseEntity< List<PenDTO>>  getPen(){
-        return  ResponseEntity.ok(penService.getAllPen());
+    public ResponseEntity<List<PenDTO>> getPen() {
+        return ResponseEntity.ok(penService.getAllPen());
     }
 
     /**
      * Get pen with id
+     *
      * @param id for pen i want find
      * @return the specific pen
      */
@@ -70,16 +72,17 @@ public class PenController {
             content = {@Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
                     schema = @Schema(implementation = ErrorResponse.class))})
     // @Authorized(resourceId = "#requestTaskActionProcessDTO.requestTaskId")
-    public ResponseEntity<PenDTO>  PenById(@PathVariable("id") Long id){
+    public ResponseEntity<PenDTO> PenById(@PathVariable("id") Long id) {
         return ResponseEntity.ok(penService.getPenById(id));
     }
 
     /**
      * Get pen by name
+     *
      * @param name for the pen i want find
      * @return the specific pen
      */
-    @GetMapping(value ="name/{name}")
+    @GetMapping(value = "name/{name}")
     @Operation(summary = "Processes a request task action")
     @ApiResponse(responseCode = "204", description = SwaggerApiInfo.NO_CONTENT)
     @ApiResponse(responseCode = "400", description = SwaggerApiInfo.REQUEST_TASK_ACTION_BAD_REQUEST,
@@ -95,12 +98,13 @@ public class PenController {
             content = {@Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
                     schema = @Schema(implementation = ErrorResponse.class))})
     // @Authorized(resourceId = "#requestTaskActionProcessDTO.requestTaskId")
-    public ResponseEntity<PenDTO > PenName(@PathVariable(value = "name") String name){
+    public ResponseEntity<PenDTO> PenName(@PathVariable(value = "name") String name) {
         return ResponseEntity.ok(penService.getPenByName(name));
     }
 
     /**
      * Save a new pen
+     *
      * @param pen is the attributes
      */
     @PostMapping
@@ -119,13 +123,14 @@ public class PenController {
             content = {@Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
                     schema = @Schema(implementation = ErrorResponse.class))})
     // @Authorized(resourceId = "#requestTaskActionProcessDTO.requestTaskId")
-    public ResponseEntity<Void> savePen(@RequestBody PenDTO pen){
+    public ResponseEntity<Void> savePen(@RequestBody PenDTO pen) {
         penService.saveNewPen(pen);
         return ResponseEntity.noContent().build();
     }
 
     /**
      * Delete pen by id
+     *
      * @param id is for pen i want delete
      * @return 204
      */
@@ -145,14 +150,15 @@ public class PenController {
             content = {@Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
                     schema = @Schema(implementation = ErrorResponse.class))})
     // @Authorized(resourceId = "#requestTaskActionProcessDTO.requestTaskId")
-    public ResponseEntity<Void> deletePen(@PathVariable("id") Long id){
+    public ResponseEntity<Void> deletePen(@PathVariable("id") Long id) {
         penService.deletePen(id);
         return ResponseEntity.noContent().build();
     }
 
     /**
      * Update the fields to a specific  Pen
-     * @param id of pen i want update
+     *
+     * @param id    of pen i want update
      * @param price is new value that might  update
      * @param stock is new value that might  update
      * @return 204
@@ -173,13 +179,19 @@ public class PenController {
             content = {@Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
                     schema = @Schema(implementation = ErrorResponse.class))})
     // @Authorized(resourceId = "#requestTaskActionProcessDTO.requestTaskId")
-    public ResponseEntity<Void>  upDatePen(
+    public ResponseEntity<Void> upDatePen(
             @PathVariable("id") Long id,
             @RequestParam(required = false) Double price,
-            @RequestParam(required = false) Integer stock){
-        //TODO make validation
-    penService.updatePen(id,price,stock);
-    return  ResponseEntity.noContent().build();
+            @RequestParam(required = false) Integer stock) {
+
+        if (stock < 0) {
+            throw new IllegalArgumentException("Stock must be non-negative");
+        }
+        if (price < 0) {
+            throw new IllegalArgumentException("Price must be non-negative");
+        }
+        penService.updatePen(id, price, stock);
+        return ResponseEntity.noContent().build();
     }
 
 }

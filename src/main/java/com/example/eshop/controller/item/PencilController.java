@@ -15,6 +15,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.ErrorResponse;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.IllegalFormatWidthException;
 import java.util.List;
 
 @RestController
@@ -180,8 +181,14 @@ public class PencilController {
             @PathVariable("id") Long id,
             @RequestParam(required = false) Double price,
             @RequestParam(required = false) Integer stock){
-        //TODO make validation
-        pencilService.updatePencil(id,price,stock);
+
+        if(stock<0){
+            throw new IllegalArgumentException("Stock must be non-negative");
+        }
+        if(price<0){
+            throw new IllegalArgumentException("Price must be non-negative");
+        }
+
         return  ResponseEntity.noContent().build();
     }
 }

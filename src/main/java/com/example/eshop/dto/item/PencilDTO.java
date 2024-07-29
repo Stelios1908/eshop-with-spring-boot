@@ -15,9 +15,6 @@ public class PencilDTO extends ItemDTO {
 
     private int tipSize;
 
-    /**
-     * TODO add comments
-     */
     private int type;
 
 
