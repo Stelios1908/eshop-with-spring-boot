@@ -10,15 +10,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.ArrayList;
-
 @Entity
 @Table(name = "shopping_cart")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ShoppingCarτ {
+public class ShoppingCart {
 
     @Id
     @SequenceGenerator(

@@ -22,12 +22,10 @@ import java.util.List;
 public class ItemController {
 
 
-
-
     private final ItemService itemService;
 
     /**
-     * TODO return response entity
+     *
      * @return
      */
     @GetMapping
