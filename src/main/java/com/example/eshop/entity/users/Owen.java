@@ -23,8 +23,8 @@ public class Owen extends Users {
     @Column(name = "is_admin")
     private boolean isAdmin;
 
-    public Owen(Long id,String name,String email,boolean isAdmin){
-        super(id,name,email);
+    public Owen(Long id,String name,String email,String password,boolean isAdmin){
+        super(id,name,email,password);
         this.isAdmin=isAdmin;
     }
 }

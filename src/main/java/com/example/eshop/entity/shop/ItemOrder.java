@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
+/*
 @Entity
 @Table(name = "itemOrder")
 @Getter
@@ -38,4 +38,4 @@ public class ItemOrder {
     @NotNull
     @Column(name="quantity")
     private int quantity;
-}
+}*/

@@ -1,11 +1,5 @@
 package com.example.eshop.configure.item;
-
-import java.util.List;
-
-import com.example.eshop.entity.items.Paper;
-import com.example.eshop.repository.items.PaperRepository;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Bean;
+/*
 import org.springframework.context.annotation.Configuration;
 
 
@@ -47,4 +41,4 @@ public class PaperConfig {
             paperRepository.saveAll(List.of(paper1, paper2,paper3));
         };
     }
-}
+}*/

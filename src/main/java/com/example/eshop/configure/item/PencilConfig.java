@@ -1,5 +1,5 @@
 package com.example.eshop.configure.item;
-
+/*
 import com.example.eshop.entity.items.Pencil;
 import com.example.eshop.repository.items.PencilRepository;
 import org.springframework.boot.CommandLineRunner;
@@ -48,3 +48,4 @@ public class PencilConfig {
         };
     }
 }
+        */

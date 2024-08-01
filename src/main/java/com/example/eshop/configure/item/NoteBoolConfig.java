@@ -1,17 +1,11 @@
 package com.example.eshop.configure.item;
 
-import com.example.eshop.entity.items.Item;
-import com.example.eshop.entity.items.Notebook;
-import com.example.eshop.entity.users.Buyer;
-import com.example.eshop.repository.items.NotebookRepository;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
-import java.util.List;
 
+/*
 @Configuration
 public class NoteBoolConfig {
+
 
     @Bean
     CommandLineRunner commandLineRunnerNotebook(NotebookRepository notebookRepository){
@@ -38,5 +32,6 @@ public class NoteBoolConfig {
             );
 ;
         };
-    }
+
 }
+        }*/

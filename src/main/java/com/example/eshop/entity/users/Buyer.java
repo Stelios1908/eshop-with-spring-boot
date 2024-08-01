@@ -29,10 +29,11 @@ public class Buyer extends Users {
     public Buyer (Long id,
                   String name,
                   String email,
+                  String password,
                   int bonus,
                   BuyerCategoryEnum buyerCategory
                   ){
-        super(id,name,email);
+        super(id,name,email,password);
         this.bonus=bonus;
         this.buyerCategory=buyerCategory;
 
