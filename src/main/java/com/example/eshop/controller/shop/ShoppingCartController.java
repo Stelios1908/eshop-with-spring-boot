@@ -2,6 +2,7 @@ package com.example.eshop.controller.shop;
 
 import com.example.eshop.dto.shop.ShoppingCartDTO;
 import com.example.eshop.service.shop.ShoppingCartService;
+import com.example.eshop.serviceImpl.shop.ShoppingCartServiceImpl;
 import com.example.eshop.swagger.SwaggerApiInfo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -21,7 +22,7 @@ import java.util.List;
 @RequestMapping("api/ShoppingCart")
 public class ShoppingCartController {
 
-    private final ShoppingCartService shoppingCartService;
+    private final ShoppingCartServiceImpl shoppingCartService;
 
     private final ModelMapper modelMapper;
 

@@ -1,9 +1,9 @@
 package com.example.eshop.controller.item;
 
+import com.example.eshop.serviceImpl.item.ItemServiceImpl;
 import com.example.eshop.swagger.SwaggerApiInfo;
 import com.example.eshop.dto.item.ItemDTO;
 import com.example.eshop.enums.ItemTypeEnum;
-import com.example.eshop.service.item.ItemService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -22,7 +22,7 @@ import java.util.List;
 public class ItemController {
 
 
-    private final ItemService itemService;
+    private final ItemServiceImpl itemService;
 
     /**
      *

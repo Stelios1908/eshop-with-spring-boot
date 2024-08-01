@@ -1,4 +1,6 @@
-package com.example.eshop.configure.item;
+/*package com.example.eshop.configure.item;
+
+
 
 import com.example.eshop.entity.items.Pen;
 import com.example.eshop.repository.items.PenRepository;
@@ -10,7 +12,7 @@ import java.util.List;
 
 @Configuration
 public class PenConfig {
-/*
+
     @Bean
     CommandLineRunner commandLineRunnerPen(PenRepository penRepository){
         return args -> {
@@ -47,5 +49,6 @@ public class PenConfig {
                     List.of(pen1,pen2,pen3)
             );
         };
-    }*/
+    }
 }
+ */

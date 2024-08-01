@@ -1,5 +1,5 @@
 package com.example.eshop.configure.item;
-
+/*
 import com.example.eshop.entity.items.Pencil;
 import com.example.eshop.repository.items.PencilRepository;
 import org.springframework.boot.CommandLineRunner;
@@ -10,7 +10,7 @@ import java.util.List;
 
 @Configuration
 public class PencilConfig {
-/*
+
     @Bean
     CommandLineRunner commandLineRunnerPencil(PencilRepository pencilRepository){
         return args -> {
@@ -46,5 +46,6 @@ public class PencilConfig {
                     List.of(pencil1,pencil2,pencil3)
             );
         };
-    }*/
+    }
 }
+        */

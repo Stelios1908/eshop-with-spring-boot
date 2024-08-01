@@ -4,6 +4,7 @@ package com.example.eshop.controller.item;
 import com.example.eshop.dto.item.PenDTO;
 import com.example.eshop.entity.items.Pen;
 import com.example.eshop.service.item.PenService;
+import com.example.eshop.serviceImpl.item.PenServiceImpl;
 import com.example.eshop.swagger.SwaggerApiInfo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -23,7 +24,7 @@ import java.util.List;
 public class PenController {
 
 
-    private final PenService penService;
+    private final PenServiceImpl penService;
 
     /**
      * Get all pen

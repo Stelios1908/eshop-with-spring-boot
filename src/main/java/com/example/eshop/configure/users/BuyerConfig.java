@@ -1,6 +1,6 @@
 package com.example.eshop.configure.users;
 
-
+/*
 import com.example.eshop.entity.users.Buyer;
 import com.example.eshop.enums.BuyerCategoryEnum;
 import com.example.eshop.repository.users.BuyerRepository;
@@ -19,7 +19,7 @@ public class BuyerConfig  {
     public BuyerConfig(PasswordEncoder passwordEncoder){
         this.passwordEncoder = passwordEncoder;
     }
-/*
+
     @Bean
     CommandLineRunner commandLineRunnerBuyer(BuyerRepository buyerRepositiry) {
             return args -> {
@@ -57,6 +57,6 @@ public class BuyerConfig  {
                 );
 
             };
-        }*/
-}
+        }
+}*/
 

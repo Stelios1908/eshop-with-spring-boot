@@ -2,6 +2,7 @@ package com.example.eshop.controller.users;
 
 import com.example.eshop.dto.users.BuyerDTO;
 import com.example.eshop.service.users.BuyerService;
+import com.example.eshop.serviceImpl.users.BuyerServiceImpl;
 import com.example.eshop.swagger.SwaggerApiInfo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -23,7 +24,7 @@ import java.util.List;
 public class BuyerController {
 
 
-    private final BuyerService buyerService;
+    private final BuyerServiceImpl buyerService;
 
     /**
      * Get all buyers

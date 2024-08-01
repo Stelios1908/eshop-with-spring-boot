@@ -2,7 +2,7 @@ package com.example.eshop.controller.item;
 
 
 import com.example.eshop.dto.item.PencilDTO;
-import com.example.eshop.service.item.PencilService;
+import com.example.eshop.serviceImpl.item.PencilServiceImpl;
 import com.example.eshop.swagger.SwaggerApiInfo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -14,8 +14,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.ErrorResponse;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.IllegalFormatWidthException;
 import java.util.List;
 
 @RestController
@@ -23,7 +21,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PencilController {
 
-    private final PencilService pencilService;
+    private final PencilServiceImpl pencilService;
 
     private final ModelMapper modelMapper;
 
@@ -188,7 +186,7 @@ public class PencilController {
         if(price<0){
             throw new IllegalArgumentException("Price must be non-negative");
         }
-
+        pencilService.updatePencil(id, price, stock);
         return  ResponseEntity.noContent().build();
     }
 }
