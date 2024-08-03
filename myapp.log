@@ -1,259 +1,52 @@
-2024-08-01 11:43:00 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 34896 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 11:43:00 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 11:43:07 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 11:43:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 11:43:07 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 11:43:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 11:43:08 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2d5c160e
-2024-08-01 11:43:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 11:43:10 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 11:43:12 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 11:43:14 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 14.857 seconds (process running for 17.713)
-2024-08-01 11:43:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 11:43:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 11:48:50 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 12992 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 11:48:50 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 11:48:54 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 11:48:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 11:48:54 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 11:48:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 11:48:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@342394b3
-2024-08-01 11:48:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 11:48:57 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 11:48:59 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 11:49:01 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 11.458 seconds (process running for 13.319)
-2024-08-01 11:49:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 11:49:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 11:52:22 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 22988 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 11:52:22 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 11:52:24 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 11:52:25 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 11:52:25 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 11:52:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 11:52:25 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@342394b3
-2024-08-01 11:52:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 11:52:26 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 11:52:28 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 11:52:30 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 8.848 seconds (process running for 10.241)
-2024-08-01 11:52:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 11:52:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 11:58:42 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 30732 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 11:58:42 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 11:58:44 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 11:58:44 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 11:58:44 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 11:58:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 11:58:45 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@342394b3
-2024-08-01 11:58:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 11:58:46 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 11:58:48 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 11:58:50 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 8.391 seconds (process running for 9.782)
-2024-08-01 11:58:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 11:58:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:06:36 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 28212 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:06:36 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:06:40 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:06:40 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:06:40 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:06:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:06:41 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@342394b3
-2024-08-01 12:06:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:06:43 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:06:45 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:06:47 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 10.623 seconds (process running for 11.87)
-2024-08-01 12:06:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:06:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:10:42 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 33400 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:10:42 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:10:45 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:10:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:10:45 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:10:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:10:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49ea13b6
-2024-08-01 12:10:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:10:48 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:10:50 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:10:51 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 9.69 seconds (process running for 11.095)
-2024-08-01 12:10:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:10:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:18:52 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 35468 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:18:52 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:18:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:18:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:18:55 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:18:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:18:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@33bfe6d3
-2024-08-01 12:18:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:18:57 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:18:59 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:19:01 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 9.85 seconds (process running for 11.071)
-2024-08-01 12:19:02 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
-2024-08-01 12:19:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:19:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:20:35 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 36544 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:20:35 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:20:38 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:20:38 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:20:38 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:20:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:20:39 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@33bfe6d3
-2024-08-01 12:20:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:20:40 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:20:42 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:20:44 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 9.677 seconds (process running for 10.951)
-2024-08-01 12:20:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:20:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:22:55 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 31620 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:22:55 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:22:58 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:22:58 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:22:58 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:22:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:22:59 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@807c1e8
-2024-08-01 12:22:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:23:00 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:23:03 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:23:05 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 9.702 seconds (process running for 11.076)
-2024-08-01 12:23:06 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> com.example.eshop.controller.item.PencilController.savePencil(com.example.eshop.dto.item.PencilDTO)]
-2024-08-01 12:23:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:23:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:24:16 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 33968 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:24:16 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:24:18 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:24:18 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:24:19 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:24:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:24:19 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2dcd451f
-2024-08-01 12:24:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:24:21 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:24:23 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:24:25 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 9.49 seconds (process running for 10.776)
-2024-08-01 12:24:26 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
-2024-08-01 12:24:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:24:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:25:13 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 5324 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:25:13 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:25:15 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:25:15 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:25:15 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:25:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:25:16 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@807c1e8
-2024-08-01 12:25:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:25:18 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:25:20 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:25:22 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 9.376 seconds (process running for 10.686)
-2024-08-01 12:25:23 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
-2024-08-01 12:25:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:25:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:26:29 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 7684 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:26:29 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:26:32 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:26:32 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:26:32 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:26:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:26:32 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@33bfe6d3
-2024-08-01 12:26:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:26:34 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:26:36 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:26:37 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 8.791 seconds (process running for 10.111)
-2024-08-01 12:26:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:26:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:26:58 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 30656 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:26:58 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:27:02 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:27:03 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:27:03 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:27:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:27:03 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7378c4a4
-2024-08-01 12:27:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:27:06 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:27:08 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:27:09 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 12.244 seconds (process running for 13.58)
-2024-08-01 12:27:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:27:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:38:37 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 28296 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:38:37 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:38:40 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:38:40 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:38:40 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:38:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:38:41 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d8fd373
-2024-08-01 12:38:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:38:42 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:38:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:38:46 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 8.685 seconds (process running for 9.971)
-2024-08-01 12:38:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:38:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:39:43 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 11372 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:39:43 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:39:45 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:39:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:39:45 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:39:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:39:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49ea13b6
-2024-08-01 12:39:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:39:47 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:39:49 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:39:51 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 8.654 seconds (process running for 9.943)
-2024-08-01 12:39:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:39:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:43:14 [main] INFO  com.example.eshop.EshopApplication - Starting EshopApplication using Java 21.0.4 with PID 19428 (C:\Users\30698\Desktop\eshop-with-Spring-boot\target\classes started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:43:14 [main] INFO  com.example.eshop.EshopApplication - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:43:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-08-01 12:43:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-08-01 12:43:16 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-08-01 12:43:17 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:43:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:43:17 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:43:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:43:18 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c2a7d53
-2024-08-01 12:43:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:43:19 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:43:22 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:43:23 [main] INFO  com.example.eshop.EshopApplication - Started EshopApplication in 9.126 seconds (process running for 9.552)
-2024-08-01 12:43:39 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-01 12:45:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:45:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:45:27 [main] INFO  com.example.eshop.EshopApplication - Starting EshopApplication using Java 21.0.4 with PID 18576 (C:\Users\30698\Desktop\eshop-with-Spring-boot\target\classes started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:45:27 [main] INFO  com.example.eshop.EshopApplication - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:45:29 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-08-01 12:45:29 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-08-01 12:45:29 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-08-01 12:45:29 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:45:29 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:45:29 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:45:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:45:30 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c27f72
-2024-08-01 12:45:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:45:31 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:45:33 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:45:34 [main] INFO  com.example.eshop.EshopApplication - Started EshopApplication in 8.238 seconds (process running for 8.696)
-2024-08-01 12:45:49 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-01 12:49:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:49:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:50:23 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 4252 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:50:23 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:50:26 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:50:26 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:50:26 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:50:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:50:26 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@807c1e8
-2024-08-01 12:50:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:50:28 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:50:31 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:50:33 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 10.373 seconds (process running for 11.854)
-2024-08-01 12:50:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:50:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-08-01 12:52:55 [main] INFO  c.e.e.c.item.PencilControllerTest - Starting PencilControllerTest using Java 21.0.4 with PID 668 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
-2024-08-01 12:52:55 [main] INFO  c.e.e.c.item.PencilControllerTest - No active profile set, falling back to 1 default profile: "default"
-2024-08-01 12:52:59 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-01 12:52:59 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-08-01 12:52:59 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-08-01 12:52:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-08-01 12:52:59 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@714b6999
-2024-08-01 12:52:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-08-01 12:53:01 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-01 12:53:03 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-01 12:53:05 [main] INFO  c.e.e.c.item.PencilControllerTest - Started PencilControllerTest in 9.636 seconds (process running for 11.011)
-2024-08-01 12:53:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-08-01 12:53:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-03 12:59:12 [main] INFO  c.e.e.c.s.ShoppingCartControllerTest - Starting ShoppingCartControllerTest using Java 21.0.4 with PID 13416 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
+2024-08-03 12:59:12 [main] INFO  c.e.e.c.s.ShoppingCartControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-08-03 12:59:17 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03 12:59:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-08-03 12:59:17 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-03 12:59:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-03 12:59:18 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77f7352a
+2024-08-03 12:59:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-03 12:59:20 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03 12:59:21 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03 12:59:23 [main] INFO  c.e.e.c.s.ShoppingCartControllerTest - Started ShoppingCartControllerTest in 10.79 seconds (process running for 12.551)
+2024-08-03 12:59:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-03 12:59:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-03 13:01:52 [main] INFO  c.e.e.c.s.ShoppingCartControllerTest - Starting ShoppingCartControllerTest using Java 21.0.4 with PID 13536 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
+2024-08-03 13:01:52 [main] INFO  c.e.e.c.s.ShoppingCartControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-08-03 13:01:56 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03 13:01:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-08-03 13:01:56 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-03 13:01:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-03 13:01:56 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1dcad16f
+2024-08-03 13:01:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-03 13:01:58 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03 13:01:59 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03 13:02:00 [main] INFO  c.e.e.c.s.ShoppingCartControllerTest - Started ShoppingCartControllerTest in 8.247 seconds (process running for 9.545)
+2024-08-03 13:02:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-03 13:02:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-03 13:04:34 [main] INFO  c.e.e.c.s.ShoppingCartControllerTest - Starting ShoppingCartControllerTest using Java 21.0.4 with PID 11092 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
+2024-08-03 13:04:34 [main] INFO  c.e.e.c.s.ShoppingCartControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-08-03 13:04:38 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03 13:04:38 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-08-03 13:04:38 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-03 13:04:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-03 13:04:38 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1dcad16f
+2024-08-03 13:04:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-03 13:04:40 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03 13:04:41 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03 13:04:43 [main] INFO  c.e.e.c.s.ShoppingCartControllerTest - Started ShoppingCartControllerTest in 8.718 seconds (process running for 10.298)
+2024-08-03 13:04:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-03 13:04:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-03 13:04:58 [main] INFO  c.e.e.c.s.ShoppingCartControllerTest - Starting ShoppingCartControllerTest using Java 21.0.4 with PID 6868 (started by 30698 in C:\Users\30698\Desktop\eshop-with-Spring-boot)
+2024-08-03 13:04:58 [main] INFO  c.e.e.c.s.ShoppingCartControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-08-03 13:05:01 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-03 13:05:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-08-03 13:05:01 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-03 13:05:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-03 13:05:01 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6595ffce
+2024-08-03 13:05:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-03 13:05:03 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-03 13:05:04 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03 13:05:05 [main] INFO  c.e.e.c.s.ShoppingCartControllerTest - Started ShoppingCartControllerTest in 7.652 seconds (process running for 8.851)
+2024-08-03 13:05:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-03 13:05:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
