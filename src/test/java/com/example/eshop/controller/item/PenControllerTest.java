@@ -1,10 +1,9 @@
 package com.example.eshop.controller.item;
-
-import com.example.eshop.dto.item.PencilDTO;
+import com.example.eshop.dto.item.PenDTO;
 import com.example.eshop.enums.ItemTypeEnum;
 import com.example.eshop.exceptions.item.itemalreadyexist.ItemAlreadyExistException;
 import com.example.eshop.exceptions.item.itemnotfound.ItemNotFoundException;
-import com.example.eshop.serviceImpl.item.PencilServiceImpl;
+import com.example.eshop.serviceImpl.item.PenServiceImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,13 +14,10 @@ import org.springframework.http.MediaType;
 import org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-
-import static org.hamcrest.Matchers.containsString;
-import static org.mockito.BDDMockito.given;
-
 import java.util.ArrayList;
 import java.util.List;
-
+import static org.hamcrest.Matchers.containsString;
+import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.doThrow;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -29,181 +25,182 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class PencilControllerTest {
+class PenControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
 
     @MockBean
-    private PencilServiceImpl pencilService;
+    private PenServiceImpl penService;
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
     /**
-     * Test the retrieval  of a Pencil via /api/Pencil GET endpoint
+     * Test the retrieval  of a Pen via /api/Pen GET endpoint
      *
      * @throws Exception if there is an error during of the execution of mock request
      *                   or if the mocking of the service layer fails
      */
     @Test
-    void getPencil() throws Exception {
-        PencilDTO pencilDTO = new PencilDTO();
-        pencilDTO.setName("Test Pencil");
+    void getPen() throws Exception {
+        PenDTO penDTO = new PenDTO();
+        penDTO.setName("Test Pen");
 
-        List<PencilDTO> pencilList = new ArrayList<>();
-        pencilList.add(pencilDTO);
+        List<PenDTO> penList = new ArrayList<>();
+        penList.add(penDTO);
 
-        given(pencilService.getAllPencil()).willReturn(pencilList);
+        given(penService.getAllPen()).willReturn(penList);
 
-        mockMvc.perform(MockMvcRequestBuilders.get("/api/Pencil")
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/Pen")
                         .with(SecurityMockMvcRequestPostProcessors.httpBasic("stelios", "steliosPass"))
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().json("[{'name':'Test Pencil'}]"));
+                .andExpect(content().json("[{'name':'Test Pen'}]"));
 
     }
 
+
     /**
-     * Test to retrieval of a Pencil via /api/Pencil/1"  GET endpoint using an id
+     * Test to retrieval of a Pen via /api/Pen/1"  GET endpoint using an id
      *
      * @throws Exception if there is an error during execution  of mock request
      *                   or if the mocking of the service layer fails
      */
     @Test
-    void penById() throws Exception {
+    void penById()  throws Exception{
 
-        PencilDTO pencilDTO = new PencilDTO();
-        pencilDTO.setId(1L);
-        pencilDTO.setName("Test Pencil");
+        PenDTO PenDTO = new PenDTO();
+        PenDTO.setId(1L);
+        PenDTO.setName("Test Pen");
 
-        given(pencilService.getPencilById(1L)).willReturn(pencilDTO);
+        given(penService.getPenById(1L)).willReturn(PenDTO);
 
-        mockMvc.perform(MockMvcRequestBuilders.get("/api/Pencil/1")
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/Pen/1")
                         .with(SecurityMockMvcRequestPostProcessors.httpBasic("stelios", "steliosPass"))
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().json("{" +
-                        "'name':'Test Pencil'," +
+                        "'name':'Test Pen'," +
                         "'id': 1 " +
                         "}"));
     }
 
 
     /**
-     * Test to retrieval of a pencil via /api/Pencil/name  GET endpoint using a name.
+     * Test to retrieval of a pen via /api/Pen/name  GET endpoint using a name.
      *
      * @throws Exception if there is an error during execution of mock request
      *                   *               or if the mocking of the service layer fails.
      */
     @Test
-    void pencilName() throws Exception {
+    void penName() throws Exception{
+        PenDTO PenDTO = new PenDTO();
+        PenDTO.setId(1L);
+        PenDTO.setName("Test Pen");
 
-        PencilDTO pencilDTO = new PencilDTO();
-        pencilDTO.setId(1L);
-        pencilDTO.setName("Test Pencil");
+        given(penService.getPenByName("Test Pen")).willReturn(PenDTO);
 
-        given(pencilService.getPencilByName("Test Pencil")).willReturn(pencilDTO);
-
-        mockMvc.perform(MockMvcRequestBuilders.get("/api/Pencil/name/Test Pencil")
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/Pen/name/Test Pen")
                         .with(SecurityMockMvcRequestPostProcessors.httpBasic("stelios", "steliosPass"))
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().json("{" +
-                        "'name':'Test Pencil'," +
+                        "'name':'Test Pen'," +
                         "'id': 1 " +
                         "}"));
+
 
     }
 
 
     /**
-     * Test to retrieval of pencil via /api/Pencil POST endpoint
+     * Test to retrieval of pen via /api/Pen POST endpoint
      *
      * @throws Exception if there is an error during execution of mock request
      *                   or if the mocking of service layer fails
      */
     @Test
-    void savePencil() throws Exception {
+    void savePen() throws  Exception {
 
-        PencilDTO pencilDTO = new PencilDTO();
-        pencilDTO.setName("New Pencil");
-        pencilDTO.setCategory(ItemTypeEnum.Pencil);
-        pencilDTO.setPrice(1.50);
-        pencilDTO.setDescription("A new pencil");
-        pencilDTO.setStock(100);
-        pencilDTO.setTipSize(7);
-      
 
-        //check if pencil is added correctly
-        doNothing().when(pencilService).saveNewPencil(pencilDTO);
+        PenDTO PenDTO = new PenDTO();
+        PenDTO.setName("New Pen");
+        PenDTO.setCategory(ItemTypeEnum.Pen);
+        PenDTO.setPrice(1.50);
+        PenDTO.setDescription("A new Pen");
+        PenDTO.setStock(100);
+        PenDTO.setTipSize(7);
 
-        mockMvc.perform(MockMvcRequestBuilders.post("/api/Pencil")
+        //check if Pen is added correctly
+        doNothing().when(penService).saveNewPen(PenDTO);
+
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/Pen")
                         .with(SecurityMockMvcRequestPostProcessors.httpBasic("stelios", "steliosPass"))
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(asJsonString(pencilDTO))) // Μετατροπή του pencilDTO σε JSON string
+                        .content(asJsonString(PenDTO))) // Μετατροπή του PenDTO σε JSON string
                 .andExpect(status().isNoContent()); // Αναμένει status 204 No Content
 
 
-        //check if the pencil already exists
-        doThrow(new ItemAlreadyExistException("Item already exists")).when(pencilService).saveNewPencil(pencilDTO);
+        //check if the Pen already exists
+        doThrow(new ItemAlreadyExistException("Item already exists")).when(penService).saveNewPen(PenDTO);
 
-        mockMvc.perform(MockMvcRequestBuilders.post("/api/Pencil")
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/Pen")
                         .with(SecurityMockMvcRequestPostProcessors.httpBasic("stelios", "steliosPass"))
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(asJsonString(pencilDTO)))
+                        .content(asJsonString(PenDTO)))
                 .andExpect(status().isBadRequest()) // Αναμένει status 409 Conflict
                 .andExpect(content().string(containsString("Item already exists")));
-
     }
 
+
     /**
-     * Test to retrieval of pencil via /api/Pencil/delete DELETE endpoint
+     * Test to retrieval of Pen via /api/Pen/delete DELETE endpoint
      *
      * @throws Exception if there is an error during execution of mock request
      *                   *              or if the mocking of service layer fails
      */
     @Test
-    void deletePencil() throws Exception {
+    void deletePen() throws Exception{
 
-        Long pencil_id = 1L;
+        Long Pen_id = 1L;
 
-        //delete pencil correctly
-        doNothing().when(pencilService).deletePencil(pencil_id);
+        //delete Pen correctly
+        doNothing().when(penService).deletePen(Pen_id);
 
-        mockMvc.perform(MockMvcRequestBuilders.delete("/api/Pencil/delete/{id}", pencil_id)
+        mockMvc.perform(MockMvcRequestBuilders.delete("/api/Pen/delete/{id}", Pen_id)
                         .with(SecurityMockMvcRequestPostProcessors.httpBasic("stelios", "steliosPass"))
                         .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isNoContent()); // awaits  status 204 No Content
+                .andExpect(status().isNoContent()); // Αναμένει status 204 No Content
 
 
-        //try to delete pencil but not found
-        doThrow(new ItemNotFoundException("Item not found ")).when(pencilService).deletePencil(pencil_id);
+        //try to delete Pen but already exists
+        doThrow(new ItemNotFoundException("Item not found ")).when(penService).deletePen(Pen_id);
 
-        mockMvc.perform(MockMvcRequestBuilders.delete("/api/Pencil/delete/{id}", pencil_id)
+        mockMvc.perform(MockMvcRequestBuilders.delete("/api/Pen/delete/{id}", Pen_id)
                         .with(SecurityMockMvcRequestPostProcessors.httpBasic("stelios", "steliosPass"))
                         .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isNotFound()) // awaits  status 404
+                .andExpect(status().isNotFound()) // Αναμένει status 409 Conflict
                 .andExpect(content().string(containsString("Item not found")));
 
     }
 
 
     /**
-     * Test to retrieval of pencil via /api/Pencil/update PATCH endpoint
+     * Test to retrieval of pen via /api/Pen/update PATCH endpoint
      * @throws Exception if there is an error during execution of mock request
      *      *            or if the mocking of service layer fails
      */
     @Test
-    void upDatePencil() throws Exception {
+    void upDatePen() throws Exception{
 
-        Long pencil_id = 1L;
+        Long Pen_id = 1L;
         Double price = 2.4;
         Integer stock = 133;
 
         //the update  was done  correctly
-        doNothing().when(pencilService).updatePencil(pencil_id, price, stock);
+        doNothing().when(penService).updatePen(Pen_id, price, stock);
 
-        mockMvc.perform(MockMvcRequestBuilders.patch("/api/Pencil/update/{id}", pencil_id)
+        mockMvc.perform(MockMvcRequestBuilders.patch("/api/Pen/update/{id}", Pen_id)
                         .with(SecurityMockMvcRequestPostProcessors.httpBasic("stelios", "steliosPass"))
                         .param("price", price.toString())
                         .param("stock", stock.toString())
@@ -211,20 +208,20 @@ class PencilControllerTest {
                 .andExpect(status().isNoContent());
 
 
-        //Pencil not exist
-        doThrow(new ItemNotFoundException("Pencil not found ")).when(pencilService).updatePencil(pencil_id,price,stock);
+        //Pen not exist
+        doThrow(new ItemNotFoundException("Pen not found ")).when(penService).updatePen(Pen_id,price,stock);
 
-        mockMvc.perform(MockMvcRequestBuilders.patch("/api/Pencil/update/{id}", pencil_id)
+        mockMvc.perform(MockMvcRequestBuilders.patch("/api/Pen/update/{id}", Pen_id)
                         .with(SecurityMockMvcRequestPostProcessors.httpBasic("stelios", "steliosPass"))
                         .param("price", price.toString())
                         .param("stock", stock.toString())
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound())
-                .andExpect(content().string(containsString("Pencil not found")));
+                .andExpect(content().string(containsString("Pen not found")));
 
 
         //Test with negative stock
-        mockMvc.perform(MockMvcRequestBuilders.patch("/api/Pencil/update/{id}", 1L)
+        mockMvc.perform(MockMvcRequestBuilders.patch("/api/Pen/update/{id}", 1L)
                         .with(SecurityMockMvcRequestPostProcessors.httpBasic("stelios", "steliosPass"))
                         .param("price", "10.0")
                         .param("stock", "-5"))
@@ -232,13 +229,12 @@ class PencilControllerTest {
                 .andExpect(content().string(containsString("Stock must be non-negative")));
 
         // Test with negative price
-        mockMvc.perform(MockMvcRequestBuilders.patch("/api/Pencil/update/{id}", 1L)
+        mockMvc.perform(MockMvcRequestBuilders.patch("/api/Pen/update/{id}", 1L)
                         .with(SecurityMockMvcRequestPostProcessors.httpBasic("stelios", "steliosPass"))
                         .param("price", "-10.0")
                         .param("stock", "5"))
                 .andExpect(status().isBadRequest())
                 .andExpect(content().string(containsString("Price must be non-negative")));
-
     }
 
 
